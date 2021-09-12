@@ -1,0 +1,567 @@
+/* Developed by: Team 1: Perrault Christopher, Fried Norman, White Christopher, Banshchikov Dmitri, Decelles Anthony
+
+/* Script Date: September 10, 2021 */
+
+/* Basic styles to be used with all devices and under all conditions */
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+address,
+article,
+aside,
+blockquote,
+body,
+cite,
+div,
+dl,
+dt,
+dd,
+em,
+figcaption,
+figure,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+li,
+main,
+nav,
+nav a,
+ol,
+p,
+section,
+span,
+ul,
+table,
+tr,
+td,
+th,
+col,
+colgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Set the default page element styles */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  line-height: 1.5em;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+nav ul {
+  list-style: none;
+  list-style-image: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/* Set original styles */
+/* Style the body */
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.donate-banner {
+  padding: 3em;
+  font-size: larger;
+  text-align: center;
+  background: azure;
+}
+
+.header {
+  padding: 3em;
+  font-size: larger;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  background-color: #333;
+}
+
+.nav a {
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar {
+  flex: 15%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {
+  flex: 85%;
+  background-color: white;
+  padding: 20px;
+}
+
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/*Sticky navbar*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+/* WD project styles
+
+
+// Script Date: August 30, 2021
+
+
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  font-weight: bold;
+  background: deepskyblue;
+}
+
+.sidenav {
+  position: fixed;
+  right: 0%;
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  margin: 0;
+  font-weight: bold;
+  background: white;
+}
+
+.sidenav a {
+  text-decoration: none;
+  display: block;
+  color: deepskyblue;
+  text-align: center;
+  padding: 1em;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidenav a:last-of-type {
+  border-bottom: none;
+}
+
+.sidenav a:hover {
+  background: #1565C0;
+}
+
+footer {
+  text-align: center;
+  background-color: deepskyblue;
+  padding: 1em;
+}
+
+article {
+  margin: 10px;
+  padding: 10px;
+  background-color: lightcyan;
+}
+
+@media all and (max-width: 800px) {
+  .nav {
+      justify-content: space-around;
+  }
+  h1 {
+      font-size: 30px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .nav {
+      flex-flow: column wrap;
+      padding: 0;
+  }
+  .nav a {
+      text-align: center;
+      padding: 5px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .nav li:last-of-type a {
+      border-bottom: none;
+  }
+  h1 {
+      font-size: 22px;
+  }
+}
+
+footer {
+  box-shadow: 0px 3px 5px black;
+}
+
+#language-select {
+  position: relative;
+  height: 33px;
+  width: 115px;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+//----------------resources.html-----------------
+
+#resources_header {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  margin: auto;
+  width: 45em;
+  background-color: seashell;
+}
+
+#resources_content img {
+  float: left;
+  padding: 0 14px 0 10px;
+}
+
+#resources_content h4 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#included {
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: right;
+  font-size: large;
+  font-weight: bold;
+}
+
+//------------------events.html-------------------
+
+table {
+  border-collapse: collapse;
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+th, td {
+  font-weight: bold;
+  border: 1px solid gray;
+  padding: 30px;
+  text-align: center;
+  width: 30px;
+}
+
+td{
+  padding: 21px;
+}
+
+a:hover {
+  box-shadow: 5px 5px 5px White inset, -5px -5px 5px White inset, 5px 5px 5px White, -5px -5px 5px White;
+  border-radius: 10px;
+}
+
+#container {
+  margin: auto;
+  background-image: url(/images/background-logo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: contain;
+  background-color: #f0f0f0;
+}
+
+header {
+  text-align: center;
+  background-image: url("/images/custombanner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 7%;
+}
+
+//----------------------index.html---------------------
+
+#news {
+  background-image: url("/images/ClearSkies1.PNG");
+  background-size: cover;
+}
+
+#about-us {
+  background-image: url("/images/Together2.PNG");
+  background-position: center;
+  background-size: cover;
+}
+
+#events {
+  background-image: url("/images/Gathering1.PNG");
+  background-position: center;
+  background-size: cover;
+}
+
+#resources {
+  background-image: url("/images/Legal1.PNG");
+  background-size: cover;
+}
+
+#donate {
+  background-image: url("/images/Together3.PNG");
+  background-position: center;
+  background-size: cover;
+}
+
+#contact {
+  background-image: url("/images/HappyPerson1.PNG");
+  background-size: cover;
+}
+
+article a {
+  text-decoration: none;
+}
+
+//----------------------about.html---------------------
+
+#mission {
+  background-image: url("/images/Together4.PNG");
+  background-size: cover;
+}
+
+#how_we {
+  background-image: url("/images/Work1.PNG");
+  background-size: cover;
+}
+
+#accomplish {
+  background-image: url("/images/Graduation2.PNG");
+  background-size: cover;
+}
+
+#plans {
+  background-image: url("/images/Together1.PNG");
+  background-size: cover;
+}
+
+#how_you {
+  background-image: url("/images/HappyPerson3.PNG");
+  background-size: cover;
+}
+
+@media screen and (max-width: 400px) {
+  .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .sidenav {
+      position: absolute;
+      top: -500px;
+      left: -500px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 768px) {
+  .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .sidenav {
+      position: fixed;
+      top: 0%;
+      right: 0%;
+  }
+}
+
+.textPop {
+  background-color: rgba(255, 255, 255, 0.863);
+  box-shadow: 0px 2px 10px black;
+  padding: 5px;
+  float: left;
+  width: 50%;
+}
+
+.cardHeader {
+  width: 100%;
+}
+
+.shadow {
+  box-shadow: 0px 3px 5px black;
+}
+
+.center {
+  text-align: center;
+}
+
+.hStyling {
+  color: white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+//----- donate.html and contact.html -----
+
+#donate_form {
+  margin-left: 15px;
+}
+
+.comment {
+  max-width: 80em;
+  resize: vertical;
+  max-height: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+#buttons {
+  padding-left: 12px;
+  text-align: left;
+}
+
+::placeholder {
+  color: darkslategray;
+  font-size: 15px;
+}
+
+// events.html
+
+.moreevents {
+  font-size: x-small;
+  text-decoration: none;
+}
+
+.eventcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.sikhcommunity, .littleitaly, .palestine, .kabir, .venezuela, .tibet, .accessasie, .awareness, .ukraine, .redcross, .greekfest, .awards {
+  height: auto;
+  width: 50%;
+}
+
+.eventcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//----Google stuff----
+
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+}
+
+//----------------
+
+.community-festival {
+  float: right;
+  width: 40%;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1096px) {
+  .tablemobile {
+      position: absolute;
+      left: -2000px;
+  }
+}
+
+.event-box {
+  table-layout: fixed;
+}
+
+.margin {
+  margin: 10px;
+}
+
+a:visited {
+  color: purple;
+}
+
+#calendar {
+  background-color: lightgray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#calendarCaption {
+  margin-top: 0px;
+}
+*/

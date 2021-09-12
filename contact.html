@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact information: Enter your Questions and comments here">
+    <meta name="keywords" content="Contact, information, questions, comments">
+    <meta name="author" content="Team 1: Perrault Christopher, Fried Norman, White Christopher, Banshchikov Dmitri, Decelles Anthony">
+    <meta name='date' content='August 27, 2021'>
+    <title>Contact Us | UIA</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+</head>
+
+
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+
+
+        <nav id="top" class="nav">
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="events.html">Events</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="donate.html">Donate</a>
+            <div id="language-options">
+                <label for="language-select"><sup>Language: </sup></label>
+                <select id="language-select">
+                    <option value="English">English</option>
+                    <option value="Francais">Fran&ccedil;ais</option>
+                    <option value="Espaniol">Espa&ntilde;ol</option>
+                </select>
+                <div id="google_translate_element"></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, 'google_translate_element');
+                    }
+                </script>
+                <script type="text/javascript"
+                    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+        </nav>
+
+
+        <main>
+            <section>
+                <h2 style="text-align: center;">You are welcome to contact us with your questions</h2>
+                <p>United Immigration Advocates (UIA) is a collaboration of major immigrant rights groups that
+                    aims to improve low-income immigrants' access to justice while also strengthening the capacity of
+                    advocates and organisations that serve them.
+                </p>
+                <p>We assist you in gaining the freedom and opportunities necessary to fulfil your professional and
+                    personal goals. Canada is, in our opinion, one of the most amazing countries on the planet to study,
+                    work, live, and raise a family. We also believe that your talents and abilities will help to make
+                    Canada a better country in the long run.
+                </p>
+                <p>
+                    People who choose to immigrate to a new nation, such as Canada, are brave by nature. It's natural to
+                    be concerned about the Canadian immigration procedure and living in Canada after you arrive, given
+                    the conditions.
+                </p>
+                <p>
+                    The immigration procedure in Canada can be complicated. Our many years of expertise counselling
+                    people going through the immigration process in Canada has given us insight into your issues and,
+                    more importantly, the solutions you're looking for.
+                </p>
+            </section>
+
+            <form method="post" action="action_page.html" autocomplete="on" class="center shadow">
+                <div>
+                    <label for="firstName">First Name: </label> <br />
+                    <input type="text" id="firstName" size="25" minlength="2" maxlength="20"
+                        placeholder="Your first name..." required="required"
+                        class="formFormat" /><span><sup>*</sup></span>
+                </div>
+                <br>
+                <div>
+                    <label for="lastName">Last Name: </label><br />
+                    <input type="text" id="lastName" size="25" minlength="2" maxlength="20"
+                        placeholder="Your last name..." required="required" class="formFormat" />
+                </div>
+                <br>
+                <div>
+                    <label for="emailAddress" class="formFormat">Email Address:</label><br />
+                    <input type="email" id="emailAddress" size="40" maxlength="40" placeholder="your_email@example.com"
+                        required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        class="formFormat" /><span><sup>*</sup></span>
+                </div>
+                <br>
+                <div>
+                    <label>Questions and Comments</label><br />
+                    <textarea class="comment" placeholder="Enter your Questions and comments here"></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" id="submitLetter" value="Submit Form" class="formFormat">
+                </div>
+                <br>
+
+            </form>
+        </main>
+        <br />
+
+        <footer class="nav">
+            <a href="#">Accessibility</a>
+            <a href="#">FAQ</a>
+            <a href="about.html">About Us</a>
+            <a href="donate.html">Donate</a>
+            <a href="resources.html">Resources</a>
+            <a href="#top">Back to top</a>
+
+            <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+
+        </footer>
+        <div class="center"> &COPY; 2021, United Immigration Advocates, updated Sept, 1, 2021, <a href="#">Support</a>
+        </div>
+    </div>
+</body>
+
+</html>
