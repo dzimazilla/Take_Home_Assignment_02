@@ -32,13 +32,13 @@
     }
 
     function processingFunction() {
-      alert ("Processing...Your transaction is being processed. Please do not close your browser or leave this page.")
+      alert("Processing...Your transaction is being processed. Please do not close your browser or leave this page.")
     }
 
 
     window.onscroll = function () { myFunction() };
 
-    var navbar = document.getElementsByTagName("nav");
+    var navbar = document.getElementById("top");
     var sticky = navbar.offsetTop;
 
     function myFunction() {
@@ -173,7 +173,7 @@
           </div>
           <div>
             <label for="lastName">Last Name: </label>
-            <input type="text" id="lastName" size="30" minlength="1" maxlength="16"
+            <input type="text" id="lastName" size="30" minlength="2" maxlength="16"
               required="required" /><span><sup>*</sup></span>
           </div>
           <div>
@@ -589,6 +589,15 @@
               <input id="postal-code" type="text"><span><sup>*</sup></span>
             </div>
 
+          </div>
+        </div>
+
+        <div>
+          <h3>Increase My Impact</h3>
+          <div>
+            <label for="impact">
+              <input id="impact" type="checkbox">Yes! Add <span id="feeAmount">$0</span> to help
+              offset bank fees</label>
           </div>
         </div>
 
