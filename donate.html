@@ -11,6 +11,8 @@
   <meta name='date' content='September 10, 2021'>
   <title>Donate | UIA</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
   <script src="/scripts/script.js"></script>
   <script>
     function resetFunction() {
@@ -35,37 +37,12 @@
       alert("Processing...Your transaction is being processed. Please do not close your browser or leave this page.")
     }
 
-
-    function showFees() {
-      var checkBox = document.getElementById("impact");
-      var showIt = document.getElementById("showFees");
-
-      if (checkBox.checked == true) {
-        showIt.style.display = "block";
-      } else {
-        showIt.style.display = "none";
-      }
-    }
-
     function calculateImpact() {
-      const BANK_FEES = 0.15;
+      const BANK_FEES = 0.02;
       var feesAmount = parseFloat(document.getElementById("twentyFive").value) * BANK_FEES;
       document.getElementById("feeAmount").value = feesAmount.toFixed(2);
     }
 
-
-    window.onscroll = function () { myFunction() };
-
-    var navbar = document.getElementById("top");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
   </script>
 </head>
 
@@ -77,7 +54,7 @@
     </div>
 
     <div class="header">
-      <h1>United Immigration Advocates</h1>
+      <img src="images/whitebackgroundlogo.png" alt="United Immigration Advocates" height="140">
     </div>
 
     <nav id="top" class="nav">
@@ -101,8 +78,8 @@
 
 
     <div class="main">
-      <h2>Donate</h2>
-      <section>
+      <h1>Donate</h1>
+      <div>
         <p>Immigrants and activists need our help now more than ever. We produce and distribute legal materials
           with charities, attorneys, and immigrants through the
           Immigration
@@ -113,7 +90,7 @@
           Fill out the form below to make a secure online donation. An email receipt will be sent to you
           automatically.
         </p>
-      </section>
+      </div>
 
       <form id="donate_form" method="post" onsubmit="processingFunction()" onreset="resetFunction()">
         <div>
@@ -154,7 +131,7 @@
             <label for="otherOption">Other</label>
           </div>
           <div>
-            <input type="number" id="otherAmount" name="other-amount" min="10" placeholder="$0.00">
+            <input type="number" id="otherAmount" name="other-amount" min="5" placeholder="$0.00">
           </div>
         </div>
 
@@ -254,6 +231,7 @@
           <div>
             <label for="country">Country</label>
             <select id="country">
+              <option value="" selected="selected">Select a country</option>
               <option value="CA">Canada</option>
               <option value="AF">Afghanistan</option>
               <option value="AX">Aland Islands</option>
@@ -516,6 +494,7 @@
           <div style="display: none">
             <label for="state">State</label>
             <select id="state">
+              <option value="" selected="selected">Select a state</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AS">American Samoa</option>
@@ -578,9 +557,10 @@
           </div>
           <div>
 
-            <div>
+            <div style="display: none">
               <label for="province">Province</label>
               <select id="province">
+                <option value="" selected="selected">Select a province</option>
                 <option value="AB">Alberta</option>
                 <option value="BC">British Columbia</option>
                 <option value="MB">Manitoba</option>
@@ -611,28 +591,17 @@
         </div>
 
         <div>
-          <h3>Increase My Impact</h3>
+          <h3>Do you want to increase your impact and to help offset bank fee?</h3>
           <div>
             <label for="impact">
-              <input id="impact" type="checkbox" onclick="function showFees()">Yes!<span style="display: none;" id="showFees"> Add <span
-                  id="feeAmount">$0</span> to help
-                offset bank fees</span>
+              <input id="impact" type="checkbox" onclick="function showFees()">Yes!
             </label>
           </div>
         </div>
-
-
-        <div>
-          <div>
-            <br>
-            <label>Comments:</label>
-            <textarea class="comment"></textarea>
-          </div>
-        </div>
-        <br>
+        
         <div id="terms">
           <input type="checkbox" />
-          I have read the <a href="#" title="Click to read Terms and Conditions">Terms and
+          I have read the <a href="index.html" title="Click to read Terms and Conditions">Terms and
             Conditions</a>*
         </div>
 
