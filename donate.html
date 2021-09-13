@@ -36,6 +36,24 @@
     }
 
 
+    function showFees() {
+      var checkBox = document.getElementById("impact");
+      var showIt = document.getElementById("showFees");
+
+      if (checkBox.checked == true) {
+        showIt.style.display = "block";
+      } else {
+        showIt.style.display = "none";
+      }
+    }
+
+    function calculateImpact() {
+      const BANK_FEES = 0.15;
+      var feesAmount = parseFloat(document.getElementById("twentyFive").value) * BANK_FEES;
+      document.getElementById("feeAmount").value = feesAmount.toFixed(2);
+    }
+
+
     window.onscroll = function () { myFunction() };
 
     var navbar = document.getElementById("top");
@@ -596,10 +614,13 @@
           <h3>Increase My Impact</h3>
           <div>
             <label for="impact">
-              <input id="impact" type="checkbox">Yes! Add <span id="feeAmount">$0</span> to help
-              offset bank fees</label>
+              <input id="impact" type="checkbox" onclick="function showFees()">Yes!<span style="display: none;" id="showFees"> Add <span
+                  id="feeAmount">$0</span> to help
+                offset bank fees</span>
+            </label>
           </div>
         </div>
+
 
         <div>
           <div>
