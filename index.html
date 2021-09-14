@@ -8,7 +8,8 @@
     <meta name="description" content="The official site for the United Immigration Advocates">
     <meta name="keywords" content="immigration, immigrant, united, advocate, advocates, emigrate, emigration, canada, canadian, lawyers,
     citizenship, activism, rights, visa, justice, donate">
-    <meta name="author" content="Team 1: Perrault Christopher, Fried Norman, White Christopher, Banshchikov Dmitri, Decelles Anthony">
+    <meta name="author"
+        content="Team 1: Perrault Christopher, Fried Norman, White Christopher, Banshchikov Dmitri, Decelles Anthony">
     <meta name='date' content='Sept 1, 2021'>
     <title>Home | UIA</title>
     <link rel="stylesheet" href="styles/style.css">
@@ -19,13 +20,17 @@
 
 <body>
     <div class="container">
-        <header>
-            <h1>United Immigration Advocates</h1>
-        </header>
+        <div class="donate-banner">
+            <p>BANNER</p>
+            <p>No matter the amount, your donation makes a difference.</p>
+        </div>
 
+        <div class="header">
+            <img src="images/whitebackgroundlogo.png" alt="United Immigration Advocates" height="140">
+        </div>
 
         <nav id="top" class="nav">
-            <a href="index.html">Home</a>
+            <a class="active" href="index.html">Home</a>
             <a href="news.html">News</a>
             <a href="events.html">Events</a>
             <a href="resources.html">Resources</a>
@@ -39,19 +44,10 @@
                     <option value="Francais">Fran&ccedil;ais</option>
                     <option value="Espaniol">Espa&ntilde;ol</option>
                 </select>
-                <div id="google_translate_element"></div>
-                <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, 'google_translate_element');
-                    }
-                </script>
-                <script type="text/javascript"
-                    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             </div>
         </nav>
 
-
-        <main class="flexwrapper">
+        <div class="main">
 
             <div class="grid">
                 <article id="news" class="shadow">
@@ -120,9 +116,9 @@
                 </article>
             </div>
 
-        </main>
-
-        <footer class="nav">
+        </div>
+    </div>
+        <div class="footer">
             <a href="#">Accessibility</a>
             <a href="#">FAQ</a>
             <a href="about.html">About Us</a>
@@ -130,17 +126,15 @@
             <a href="resources.html">Resources</a>
             <a href="#top">Back to top</a>
 
-
             <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
 
-
-        </footer>
-
-        <div class="center"> &COPY; 2021, United Immigration Advocates, updated Sept, 1, 2021, <a href="#">Support</a>
         </div>
-    </div>
+
+        <div class="footer">
+            &COPY; 2021, United Immigration Advocates, updated Sept, 1, 2021, <a href="#">Support</a>
+        </div>
 </body>
 
 </html>
