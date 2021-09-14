@@ -1,5 +1,5 @@
 /*
-    ~ Developed by Christopher Perrault & Dimitri Banshchikov ~
+    ~ Developed by Christopher Perrault & Dmitri Banshchikov ~
 
     events_calendar.js is referenced by events.html
     for calendar functionality.

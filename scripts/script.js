@@ -3,7 +3,19 @@
 /* Script Date: September 10, 2021 */
 
 // Contact us form validation
-function validate(){
+
+function contactFunction() {
+alert ("Thank you for your questions and comments. We will revert to you soon");
+}
+
+console.log("coucou");
+
+function contactValidate() {
+  function processingFunction() {
+    alert("Processing...Your transaction is being processed. Please do not close your browser or leave this page.")
+  }
+
+
   var name = document.getElementById("firstName").value;
   var subject = document.getElementById("subject").value;
   var phone = document.getElementById("phoneNumber").value;
@@ -11,29 +23,26 @@ function validate(){
   var message = document.getElementById("message").value;
   var error_message = document.getElementById("errorMessage");
   var text;
-  phoneNumber
-  
-  if(name.length < 2){
-    text = "Please Enter valid Name";
-    error_message.innerHTML = text;
-    return false;
+
+  if (name.length < 4) {
+    window.alert("Please Enter valid Name");
   }
-  if(subject.length < 5){
+  if (subject.length < 5) {
     text = "Please Enter Correct Subject";
     error_message.innerHTML = text;
     return false;
   }
-  if(isNaN(phone) || phone.length != 10){
+  if (isNaN(phone) || phone.length != 10) {
     text = "Please Enter valid Phone Number";
     error_message.innerHTML = text;
     return false;
   }
-  if(email.indexOf("@") == -1 || email.length < 6){
+  if (email.indexOf("@") == -1 || email.length < 6) {
     text = "Please Enter valid Email";
     error_message.innerHTML = text;
     return false;
   }
-  if(message.length <= 140){
+  if (message.length <= 140) {
     text = "Please Enter More Than 140 Characters";
     error_message.innerHTML = text;
     return false;
@@ -41,9 +50,3 @@ function validate(){
   alert("Form Submitted Successfully!");
   return true;
 }
-
-
-// demo
-document.getElementById("demo").innerHTML = 888;
-
-
