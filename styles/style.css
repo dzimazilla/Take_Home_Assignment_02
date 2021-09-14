@@ -211,7 +211,7 @@ body {
 
 /*    calendar (events.html) styles   */
 
-#calendar {
+div #calendar {
   width: 80%;
   margin: 30px auto 10px;
 }
