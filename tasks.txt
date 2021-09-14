@@ -1,0 +1,44 @@
+- <done>remove one of two language changers
+- add an array (storing a set of related data, provided by dev or a user)
+- add a loop (usually in the array to perform a common action on each array element)
+- add code to convert the array or object into a string (part 7)
+- draw the DOM tree (check part 4 of project .pdf)
+- add validation code to all forms. Each form needs at least 3 form controls (check boxes, text boxes, option buttons, selection lists, text areas)
+- include validation errors
+- part 6, adding two pages of forms with data, etc
+- updating the calendar
+- find additional features/enhancements if needed
+- identify data provided by an AJAX service. Construct Ajax request (part 9)
+- implement a jquery method
+- validate
+- clean up bugs, fix names, dates, etc
+
+
+// sticky navbar....don't working. https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky
+// https://codepen.io/geoffgraham/pen/ybVzeX
+window.onscroll = function () { myFunction() };
+
+var navbar = document.getElementById("top");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+// Mobile Navigation Menu https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+
+// sidenav https://codepen.io/chriscoyier/pen/qyELzd
+
+//Sign Up for Updates
+
+//Survey? https://codepen.io/juancjara/pen/yNQqJE
+
+// index::   https://www.immigrationadvocates.org/
+
+
+
+
