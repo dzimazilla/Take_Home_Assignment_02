@@ -102,14 +102,6 @@ body {
   width: 100%;
 }
 
-.header {
-  padding: 3em;
-  font-size: larger;
-  text-align: center;
-  color: black;
-  width: 100%;
-}
-
 .nav {
   display: flex;
   background-color: #333;
